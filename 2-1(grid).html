@@ -8,16 +8,12 @@
   body{
     margin:0px;
   }
-  #active {
-      color:red;
-    }
+
     a {
     color: black;
     text-decoration: none;
   }
-    .saw{
-    color:gray;
-  }
+
   h1{
     font-size:40px;
     text-align: center;
@@ -30,9 +26,20 @@
     width:100px;
     margin :0px;
     padding :20px;
+    }
 
+  #grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
   }
 
+  #grid ol{
+    padding-left: 30px;
+  }
+
+  #article{
+    padding-left: 25px;
+  }
   </style>
 
 </head>
@@ -40,15 +47,19 @@
 <body>
 
   <h1><a href="index.html">WEB</a></h1>
-<ol>
-  <li><a href="1.html" class="saw">html</a></li>
-  <li><a href="2.html" class="saw" id="active">css</a></li>
+<div id="grid">
+  <ol>
+  <li><a href="1.html" >html</a></li>
+  <li><a href="2.html">css</a></li>
   <li><a href="3.html">javascript</a></li>
-</ol>
+  </ol>
 
-<h2><font color="blue">css</font></h2>
-<p><a href="https://www.w3.org/standards/webdesign/htmlcss#whathtml" target="_blank" title="css">CSS</a> is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent of HTML and can be used with any XML-based markup language. The separation of HTML from CSS makes it easier to maintain sites, share style sheets across pages, and tailor pages to different environments. This is referred to as the separation of structure (or: content) from presentation.
-</p>
+    <div id="article">
+    <h2><font color="blue">css</font></h2>
+    <p><a href="https://www.w3.org/standards/webdesign/htmlcss#whathtml" target="_blank" title="css">CSS</a> is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent of HTML and can be used with any XML-based markup language. The separation of HTML from CSS makes it easier to maintain sites, share style sheets across pages, and tailor pages to different environments. This is referred to as the separation of structure (or: content) from presentation.
+    </p>
+    </div>
+</div>
 
 </body>
 </html>
