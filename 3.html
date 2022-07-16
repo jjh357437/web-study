@@ -3,35 +3,15 @@
 <head>
   <title>WEB1-JAVASCRIPT란 무엇인가?</title>
   <meta charset="utf-8">
-</head>
+<script src="colors.js"></script>
+
+   </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
-  <input id="night_day" type="button" value="night" onclick="
-  var target = document.querySelector('body');
-  if(this.value === 'night'){
-    target.style.backgroundColor = 'black';
-    target.style.color = 'white';
-    this.value = 'day';
 
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while(i<alist.length){
-      alist[i].style.color='powderblue';
-      i = i + 1;
-    }
-  } else  {
-    target.style.backgroundColor = 'white';
-    target.style.color = 'black';
-    this.value = 'night';
+  <input id="night_day" type="button" value="night" onclick="nightDayHandler(this);
+">
 
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while(i<alist.length){
-      alist[i].style.color='blue';
-      i = i + 1;
-    }
-  }
-  ">
 <ol>
   <li><a href="1.html">html</a></li>
   <li><a href="2.html">CSS</a></li>
@@ -40,10 +20,8 @@
 </ol>
 
 <h2>javascript</h2>
-
 <p>
    javascript is program code that doesn’t need pre-processing (e.g. compiling) before being run. In the context of a Web browser, scripting usually refers to program code written in JavaScript that is executed by the browser when a page is downloaded, or in response to an event triggered by the user.</p>
-
 <p>
   This additional interactivity makes Web pages behave like a traditional software application.</p>These Web pages are often called Web applications and can be made available either directly in the browser as a Web page, or can be packaged and distributed as Widgets.
 
