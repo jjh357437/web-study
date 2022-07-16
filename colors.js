@@ -1,34 +1,28 @@
 var link ={
-  setcolor:function(color){
-    var alist = document.querySelectorAll('a');
-    var i =0;
-    while(i < alist.length){
-    alist[i].style.color = color;
-   i = i + 1;
-     }
+  setColor:function(color){
+   $('a').css('color',color);
   }
 }
-var body ={
-  setcolor:function(color){
-    document.querySelector('body').style.color = color;
+var Body ={
+  setColor:function(color){
+    $('Body').css('color',color);
   },
-setbackgroundcolor:function(color){
-  document.querySelector('body').style.backgroundColor = color;
-}
+  setBackgroundColor:function(color){
+    $('Body').css('backgroundColor',color);
+  }
 }
 function nightDayHandler(self){
-var target = document.querySelector('body');
+var target = document.querySelector('Body');
 if(self.value ==='night'){
-body.setbackgroundcolor('black');
-body.setcolor('white');
-self.value = 'day';
+  Body.setBackgroundColor('black');
+  Body.setColor('white');
+  self.value = 'day';
+  link.setColor('powderblue');
 
-link.setcolor('powderblue');
-
-}else{
-body.setbackgroundcolor('white');
-body.setcolor('black');
-self.value = 'night';
-link.setcolor('blue');
-} 
+} else{
+    Body.setBackgroundColor('white');
+    Body.setColor('black');
+    self.value = 'night';
+    link.setColor('blue');
+  } 
 }
